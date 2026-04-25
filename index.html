@@ -254,7 +254,7 @@ async function loadLanguageData(lang) {
     DATA_CACHE[lang] = json;
     return json;
   } catch (err) {
-    const msg = err?.message || String(err);
+    const msg = err instanceof Error ? err.message : String(err);
     if (msg.startsWith('Failed to load')) throw err;
     if (msg.includes('JSON')) throw new Error(`Invalid JSON in ${LANG_FILES[lang]}: ${msg}`);
     throw new Error(`Request error while fetching ${LANG_FILES[lang]}: ${msg}`);
@@ -297,9 +297,10 @@ async function switchLang(lang) {
       : message.startsWith('Failed to load')
         ? 'The language data file could not be loaded from the server.'
         : 'The language data request failed.';
-    alert(currentData
+    const alertText = currentData
       ? `Failed to switch to ${targetLanguage}. ${detail} See browser console for details.`
-      : `Failed to load ${targetLanguage} data. ${detail} Please refresh and see browser console for details.`);
+      : `Failed to load ${targetLanguage} data. ${detail} Please refresh and see browser console for details.`;
+    alert(alertText);
   }
 }
 
