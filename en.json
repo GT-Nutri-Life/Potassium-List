@@ -1,249 +1,817 @@
 {
-  "lang": "en",
-  "dir": "ltr",
-  "meta": {
-    "title": "Potassium Food Reference Guide",
-    "subtitle": "A complete reference for potassium content in everyday foods",
-    "unit": "mg per 100g of food",
-    "credit": "Food references developed by",
-    "dietitian": "Gayathri Dissanayaka",
-    "designation": "Dietitian & Nutritionist",
-    "developer_label": "Web application developed by",
-    "developer_name": "Ashen Wijesingha",
-    "developer_url": "https://ashenwijesingha.github.io/Meal-Plan-Generator/",
-    "source": "Source: Sri Lanka Food Composition Database",
-    "search_placeholder": "Search for a food...",
-    "all_label": "All Categories",
-    "language_label": "Language"
-  },
-  "levels": {
-    "low": { "label": "Low Potassium", "range": "100 mg or less", "color": "low" },
-    "medium": { "label": "Medium Potassium", "range": "101–200 mg", "color": "medium" },
-    "high": { "label": "High Potassium", "range": "201–300 mg", "color": "high" },
-    "very_high": { "label": "Very High Potassium", "range": "300 mg or more", "color": "very_high" }
-  },
-  "categories": [
-    {
-      "id": "cereals",
-      "icon": "🌾",
-      "name": "Cereals & Cereal Products",
-      "items": [
-        { "name": "Rice, Kekulu, White", "level": "low", "value": 87.92 },
-        { "name": "Vermicelli, Rice", "level": "low", "value": 61.98 },
-        { "name": "Rice, Flakes", "level": "medium", "value": 148 },
-        { "name": "Rice, Kaluhinati", "level": "medium", "value": 149 },
-        { "name": "Rice, Keri Samba", "level": "medium", "value": 155 },
-        { "name": "Rice, Kekulu, Red", "level": "medium", "value": 169 },
-        { "name": "Rice, Nadu, White", "level": "medium", "value": 147 },
-        { "name": "Rice, Samba", "level": "medium", "value": 154 },
-        { "name": "Rice, Samba Kekulu", "level": "medium", "value": 149 },
-        { "name": "Wheat Flour, Atta", "level": "medium", "value": 140 },
-        { "name": "Wheat Flour, Refined", "level": "high", "value": 290 },
-        { "name": "Barley", "level": "high", "value": 261 },
-        { "name": "Millet, Finger (Kurakkan)", "level": "very_high", "value": 418 }
+  "lang":"en",
+      "dir":"ltr",
+      "meta":{
+         "title":"Potassium Food Reference Guide",
+         "subtitle":"A complete reference for potassium content in everyday foods",
+         "unit":"mg per 100g of food",
+         "credit":"Food references developed by",
+         "dietitian":"Gayathri Dissanayaka",
+         "designation":"Dietitian & Nutritionist",
+         "developer_label":"Web application developed by",
+         "developer_name":"Ashen Wijesingha",
+         "developer_url":"https://ashenwijesingha.github.io/Meal-Plan-Generator/",
+         "source":"Source: Sri Lanka Food Composition Database",
+         "search_placeholder":"Search for a food...",
+         "all_label":"All Categories",
+         "language_label":"Language"
+      },
+      "levels":{
+         "low":{
+            "label":"Low Potassium",
+            "range":"100 mg or less",
+            "color":"low"
+         },
+         "medium":{
+            "label":"Medium Potassium",
+            "range":"101–200 mg",
+            "color":"medium"
+         },
+         "high":{
+            "label":"High Potassium",
+            "range":"201–300 mg",
+            "color":"high"
+         },
+         "very_high":{
+            "label":"Very High Potassium",
+            "range":"300 mg or more",
+            "color":"very_high"
+         }
+      },
+      "categories":[
+         {
+            "id":"cereals",
+            "icon":"🌾",
+            "name":"Cereals & Cereal Products",
+            "items":[
+               {
+                  "name":"Rice, Kekulu, White",
+                  "level":"low",
+                  "value":87.92
+               },
+               {
+                  "name":"Vermicelli, Rice",
+                  "level":"low",
+                  "value":61.98
+               },
+               {
+                  "name":"Rice, Flakes",
+                  "level":"medium",
+                  "value":148
+               },
+               {
+                  "name":"Rice, Kaluhinati",
+                  "level":"medium",
+                  "value":149
+               },
+               {
+                  "name":"Rice, Keri Samba",
+                  "level":"medium",
+                  "value":155
+               },
+               {
+                  "name":"Rice, Kekulu, Red",
+                  "level":"medium",
+                  "value":169
+               },
+               {
+                  "name":"Rice, Nadu, White",
+                  "level":"medium",
+                  "value":147
+               },
+               {
+                  "name":"Rice, Samba",
+                  "level":"medium",
+                  "value":154
+               },
+               {
+                  "name":"Rice, Samba Kekulu",
+                  "level":"medium",
+                  "value":149
+               },
+               {
+                  "name":"Wheat Flour, Atta",
+                  "level":"medium",
+                  "value":140
+               },
+               {
+                  "name":"Wheat Flour, Refined",
+                  "level":"high",
+                  "value":290
+               },
+               {
+                  "name":"Barley",
+                  "level":"high",
+                  "value":261
+               },
+               {
+                  "name":"Millet, Finger (Kurakkan)",
+                  "level":"very_high",
+                  "value":418
+               }
+            ]
+         },
+         {
+            "id":"roots",
+            "icon":"🥔",
+            "name":"Roots & Tubers",
+            "items":[
+               {
+                  "name":"Beetroot",
+                  "level":"high",
+                  "value":298
+               },
+               {
+                  "name":"Carrot",
+                  "level":"high",
+                  "value":250
+               },
+               {
+                  "name":"Radish, Elongated, White Skin",
+                  "level":"high",
+                  "value":248
+               },
+               {
+                  "name":"Radish, Round, White Skin",
+                  "level":"high",
+                  "value":298
+               },
+               {
+                  "name":"Tapioca / Cassava",
+                  "level":"high",
+                  "value":276
+               },
+               {
+                  "name":"Lasia Stalk",
+                  "level":"very_high",
+                  "value":611
+               },
+               {
+                  "name":"Colocasia",
+                  "level":"very_high",
+                  "value":511
+               },
+               {
+                  "name":"Lotus Root",
+                  "level":"very_high",
+                  "value":611
+               },
+               {
+                  "name":"Potato, Brown Skin",
+                  "level":"very_high",
+                  "value":541
+               },
+               {
+                  "name":"Radish, Round, Red Skin",
+                  "level":"very_high",
+                  "value":308
+               },
+               {
+                  "name":"Sweet Potato, Pink Skin",
+                  "level":"very_high",
+                  "value":329
+               }
+            ]
+         },
+         {
+            "id":"pulses",
+            "icon":"🫘",
+            "name":"Pulses",
+            "items":[
+               {
+                  "name":"Bengal Gram, Dhal",
+                  "level":"very_high",
+                  "value":919
+               },
+               {
+                  "name":"Cowpea, White",
+                  "level":"very_high",
+                  "value":1243
+               },
+               {
+                  "name":"Green Gram, Whole",
+                  "level":"very_high",
+                  "value":1127
+               },
+               {
+                  "name":"Lentils, Dhal",
+                  "level":"very_high",
+                  "value":798
+               }
+            ]
+         },
+         {
+            "id":"vegetables",
+            "icon":"🥦",
+            "name":"Vegetables",
+            "items":[
+               {
+                  "name":"Snake Gourd, Dark Green",
+                  "level":"medium",
+                  "value":104
+               },
+               {
+                  "name":"Cho Cho Marrow",
+                  "level":"medium",
+                  "value":141
+               },
+               {
+                  "name":"Ridge Gourd",
+                  "level":"medium",
+                  "value":121
+               },
+               {
+                  "name":"Spiny Gourd / Thumba Karavila",
+                  "level":"medium",
+                  "value":146
+               },
+               {
+                  "name":"Ambarella",
+                  "level":"medium",
+                  "value":174
+               },
+               {
+                  "name":"Bean, Scarlet, Tender",
+                  "level":"medium",
+                  "value":163
+               },
+               {
+                  "name":"Brinjal, Chinese Eggplant",
+                  "level":"medium",
+                  "value":178
+               },
+               {
+                  "name":"Capsicum, Green",
+                  "level":"medium",
+                  "value":157
+               },
+               {
+                  "name":"Cucumber, Persian",
+                  "level":"medium",
+                  "value":149
+               },
+               {
+                  "name":"Mango, Green, Raw",
+                  "level":"medium",
+                  "value":165
+               },
+               {
+                  "name":"Papaya, Raw",
+                  "level":"medium",
+                  "value":177
+               },
+               {
+                  "name":"Pumpkin, Green, Cylindrical",
+                  "level":"medium",
+                  "value":186
+               },
+               {
+                  "name":"Tomato, Ripe, Local",
+                  "level":"medium",
+                  "value":190
+               },
+               {
+                  "name":"Bitter Gourd, Short",
+                  "level":"high",
+                  "value":235
+               },
+               {
+                  "name":"Brinjal, Pandora Striped",
+                  "level":"high",
+                  "value":260
+               },
+               {
+                  "name":"Cabbage, Greens",
+                  "level":"high",
+                  "value":213
+               },
+               {
+                  "name":"Capsicum, Local",
+                  "level":"high",
+                  "value":240
+               },
+               {
+                  "name":"Cauliflower",
+                  "level":"high",
+                  "value":291
+               },
+               {
+                  "name":"Corn, Baby",
+                  "level":"high",
+                  "value":260
+               },
+               {
+                  "name":"Cucumber, Indian",
+                  "level":"high",
+                  "value":266
+               },
+               {
+                  "name":"Cucumber, Mangalore / Kakiri",
+                  "level":"high",
+                  "value":229
+               },
+               {
+                  "name":"Ladies Fingers (Okra)",
+                  "level":"high",
+                  "value":254
+               },
+               {
+                  "name":"Leeks",
+                  "level":"high",
+                  "value":252
+               },
+               {
+                  "name":"Lettuce",
+                  "level":"high",
+                  "value":228
+               },
+               {
+                  "name":"Plantain, Ash",
+                  "level":"high",
+                  "value":271
+               },
+               {
+                  "name":"Pumpkin, Common",
+                  "level":"high",
+                  "value":244
+               },
+               {
+                  "name":"Kankun",
+                  "level":"high",
+                  "value":271
+               },
+               {
+                  "name":"Ash Gourd",
+                  "level":"very_high",
+                  "value":312
+               },
+               {
+                  "name":"Beans, French, Country",
+                  "level":"very_high",
+                  "value":389
+               },
+               {
+                  "name":"Beans, Long, Red",
+                  "level":"very_high",
+                  "value":304
+               },
+               {
+                  "name":"Bitter Gourd, Elongated",
+                  "level":"very_high",
+                  "value":323
+               },
+               {
+                  "name":"Cassava Leaves",
+                  "level":"very_high",
+                  "value":500
+               },
+               {
+                  "name":"Drumstick",
+                  "level":"very_high",
+                  "value":336
+               },
+               {
+                  "name":"Hummingbird Tree Leaves / Kathurumurunga",
+                  "level":"very_high",
+                  "value":674
+               },
+               {
+                  "name":"Indian Pennywort / Gotukola",
+                  "level":"very_high",
+                  "value":381
+               },
+               {
+                  "name":"Jackfruit, Raw",
+                  "level":"very_high",
+                  "value":341
+               },
+               {
+                  "name":"Jackfruit, Seed, Mature",
+                  "level":"very_high",
+                  "value":459
+               },
+               {
+                  "name":"Knol-Khol",
+                  "level":"very_high",
+                  "value":367
+               },
+               {
+                  "name":"Malabar Spinach",
+                  "level":"very_high",
+                  "value":409
+               },
+               {
+                  "name":"Mushroom, Oyster, White",
+                  "level":"very_high",
+                  "value":317
+               },
+               {
+                  "name":"Plantain, Flower",
+                  "level":"very_high",
+                  "value":422
+               },
+               {
+                  "name":"Sessile Joyweed / Mukunuwanna",
+                  "level":"very_high",
+                  "value":450
+               },
+               {
+                  "name":"Winged Bean",
+                  "level":"very_high",
+                  "value":318
+               }
+            ]
+         },
+         {
+            "id":"fruits",
+            "icon":"🍎",
+            "name":"Fruits",
+            "items":[
+               {
+                  "name":"Apple, Red",
+                  "level":"low",
+                  "value":94.55
+               },
+               {
+                  "name":"Mangosteen",
+                  "level":"low",
+                  "value":46.93
+               },
+               {
+                  "name":"Apple, Green",
+                  "level":"medium",
+                  "value":116
+               },
+               {
+                  "name":"Grapes, Seeded, Round, Black",
+                  "level":"medium",
+                  "value":171
+               },
+               {
+                  "name":"Jamun / Rose Apple, White",
+                  "level":"medium",
+                  "value":115
+               },
+               {
+                  "name":"Lemon, Juice",
+                  "level":"medium",
+                  "value":144
+               },
+               {
+                  "name":"Lime",
+                  "level":"medium",
+                  "value":200
+               },
+               {
+                  "name":"Mango, Ripe, Vilad",
+                  "level":"medium",
+                  "value":171
+               },
+               {
+                  "name":"Papaya, Ripe",
+                  "level":"medium",
+                  "value":181
+               },
+               {
+                  "name":"Pear",
+                  "level":"medium",
+                  "value":103
+               },
+               {
+                  "name":"Pineapple",
+                  "level":"medium",
+                  "value":133
+               },
+               {
+                  "name":"Star Fruit",
+                  "level":"medium",
+                  "value":159
+               },
+               {
+                  "name":"Strawberry",
+                  "level":"medium",
+                  "value":140
+               },
+               {
+                  "name":"Watermelon, Dark Green",
+                  "level":"medium",
+                  "value":134
+               },
+               {
+                  "name":"Banana, Ripe, Cavendish",
+                  "level":"high",
+                  "value":261
+               },
+               {
+                  "name":"Dates, Processed",
+                  "level":"high",
+                  "value":296
+               },
+               {
+                  "name":"Grapes, Seedless, Oval, Black",
+                  "level":"high",
+                  "value":245
+               },
+               {
+                  "name":"Guava, Kilo Pera",
+                  "level":"high",
+                  "value":296
+               },
+               {
+                  "name":"Jackfruit, Ripe",
+                  "level":"high",
+                  "value":268
+               },
+               {
+                  "name":"Mandarine, Heen Naran",
+                  "level":"high",
+                  "value":226
+               },
+               {
+                  "name":"Mango, Ripe, Karattakolumban",
+                  "level":"high",
+                  "value":288
+               },
+               {
+                  "name":"Pomegranate, Maroon Seeds",
+                  "level":"high",
+                  "value":204
+               },
+               {
+                  "name":"Avocado",
+                  "level":"very_high",
+                  "value":377
+               },
+               {
+                  "name":"Banana, Ripe, Ambul",
+                  "level":"very_high",
+                  "value":437
+               },
+               {
+                  "name":"Banana, Ripe, Anamalu",
+                  "level":"very_high",
+                  "value":449
+               },
+               {
+                  "name":"Ceylon Olive",
+                  "level":"very_high",
+                  "value":351
+               },
+               {
+                  "name":"Passion Fruit, Seeded, Yellow",
+                  "level":"very_high",
+                  "value":374
+               },
+               {
+                  "name":"Wood Apple",
+                  "level":"very_high",
+                  "value":348
+               }
+            ]
+         },
+         {
+            "id":"fish",
+            "icon":"🐟",
+            "name":"Fish",
+            "items":[
+               {
+                  "name":"Sardinella, Spotted / Hurulla",
+                  "level":"medium",
+                  "value":155
+               },
+               {
+                  "name":"Scad, Mackerel / Linna",
+                  "level":"medium",
+                  "value":160
+               },
+               {
+                  "name":"Anchovy",
+                  "level":"high",
+                  "value":270
+               },
+               {
+                  "name":"Sailfish, Indo-Pacific / Thalapath",
+                  "level":"high",
+                  "value":282
+               },
+               {
+                  "name":"Sardinella, Goldstripe / Salaya",
+                  "level":"high",
+                  "value":284
+               },
+               {
+                  "name":"Tuna, Skipjack / Balaya",
+                  "level":"high",
+                  "value":273
+               },
+               {
+                  "name":"Tuna, Yellowfin / Kelawalla",
+                  "level":"high",
+                  "value":272
+               },
+               {
+                  "name":"Indian Mackerel",
+                  "level":"very_high",
+                  "value":309
+               },
+               {
+                  "name":"Seer Fish / Thora",
+                  "level":"very_high",
+                  "value":473
+               },
+               {
+                  "name":"Shark, Silky / Kiri Mora",
+                  "level":"very_high",
+                  "value":372
+               },
+               {
+                  "name":"Tuna, Frigate / Alagoduwa",
+                  "level":"very_high",
+                  "value":319
+               },
+               {
+                  "name":"Tuna, Mackerel / Balayal",
+                  "level":"very_high",
+                  "value":357
+               }
+            ]
+         },
+         {
+            "id":"shellfish",
+            "icon":"🦐",
+            "name":"Marine & Freshwater Shellfish",
+            "items":[
+               {
+                  "name":"Squid, Long Barrel / Dhallal",
+                  "level":"medium",
+                  "value":134
+               },
+               {
+                  "name":"Prawn",
+                  "level":"medium",
+                  "value":141
+               },
+               {
+                  "name":"Crab, Mud",
+                  "level":"high",
+                  "value":227
+               },
+               {
+                  "name":"Tilapia",
+                  "level":"high",
+                  "value":255
+               }
+            ]
+         },
+         {
+            "id":"dairy",
+            "icon":"🥛",
+            "name":"Milk & Dairy Products",
+            "items":[
+               {
+                  "name":"Butter, Salted",
+                  "level":"low",
+                  "value":24
+               },
+               {
+                  "name":"Cheese, Cottage / Paneer",
+                  "level":"low",
+                  "value":83
+               },
+               {
+                  "name":"Curd, Buffalo, Whole",
+                  "level":"low",
+                  "value":86.92
+               },
+               {
+                  "name":"Ghee, Cow",
+                  "level":"low",
+                  "value":1
+               },
+               {
+                  "name":"Milk, Cow, Liquid, Full Cream",
+                  "level":"medium",
+                  "value":131
+               },
+               {
+                  "name":"Milk, Cow, Non Fat",
+                  "level":"medium",
+                  "value":131
+               },
+               {
+                  "name":"Yoghurt, Low Fat, Plain",
+                  "level":"medium",
+                  "value":141
+               },
+               {
+                  "name":"Milk, Cow, Low Fat",
+                  "level":"medium",
+                  "value":168
+               },
+               {
+                  "name":"Milk, Cow, Condensed, Sweetened, Whole",
+                  "level":"very_high",
+                  "value":366
+               },
+               {
+                  "name":"Milk, Cow, Powdered, Skimmed",
+                  "level":"very_high",
+                  "value":1600
+               },
+               {
+                  "name":"Milk, Cow, Powdered, Whole",
+                  "level":"very_high",
+                  "value":1180
+               }
+            ]
+         },
+         {
+            "id":"eggs",
+            "icon":"🥚",
+            "name":"Eggs",
+            "items":[
+               {
+                  "name":"Egg, Country, Whole, Raw",
+                  "level":"medium",
+                  "value":117
+               }
+            ]
+         },
+         {
+            "id":"poultry",
+            "icon":"🍗",
+            "name":"Poultry",
+            "items":[
+               {
+                  "name":"Chicken, Broiler, Drumstick, Skinless",
+                  "level":"high",
+                  "value":279
+               },
+               {
+                  "name":"Chicken, Broiler, Thigh, Skinless",
+                  "level":"high",
+                  "value":257
+               },
+               {
+                  "name":"Chicken, Broiler, Breast, Skinless",
+                  "level":"very_high",
+                  "value":302
+               },
+               {
+                  "name":"Chicken, Country, Leg, With Skin",
+                  "level":"very_high",
+                  "value":365
+               }
+            ]
+         },
+         {
+            "id":"meat",
+            "icon":"🥩",
+            "name":"Meat",
+            "items":[
+               {
+                  "name":"Beef, Liver",
+                  "level":"high",
+                  "value":286
+               },
+               {
+                  "name":"Pork, Shoulder",
+                  "level":"high",
+                  "value":243
+               },
+               {
+                  "name":"Beef, Chops",
+                  "level":"very_high",
+                  "value":367
+               },
+               {
+                  "name":"Goat, Chops",
+                  "level":"very_high",
+                  "value":333
+               }
+            ]
+         },
+         {
+            "id":"nuts",
+            "icon":"🥜",
+            "name":"Nuts & Seeds",
+            "items":[
+               {
+                  "name":"Almond",
+                  "level":"very_high",
+                  "value":679
+               },
+               {
+                  "name":"Cashew Nut",
+                  "level":"very_high",
+                  "value":645
+               },
+               {
+                  "name":"Ground Nut (Peanut)",
+                  "level":"very_high",
+                  "value":664
+               }
+            ]
+         }
       ]
-    },
-    {
-      "id": "roots",
-      "icon": "🥔",
-      "name": "Roots & Tubers",
-      "items": [
-        { "name": "Beetroot", "level": "high", "value": 298 },
-        { "name": "Carrot", "level": "high", "value": 250 },
-        { "name": "Radish, Elongated, White Skin", "level": "high", "value": 248 },
-        { "name": "Radish, Round, White Skin", "level": "high", "value": 298 },
-        { "name": "Tapioca / Cassava", "level": "high", "value": 276 },
-        { "name": "Lasia Stalk", "level": "very_high", "value": 611 },
-        { "name": "Colocasia", "level": "very_high", "value": 511 },
-        { "name": "Lotus Root", "level": "very_high", "value": 611 },
-        { "name": "Potato, Brown Skin", "level": "very_high", "value": 541 },
-        { "name": "Radish, Round, Red Skin", "level": "very_high", "value": 308 },
-        { "name": "Sweet Potato, Pink Skin", "level": "very_high", "value": 329 }
-      ]
-    },
-    {
-      "id": "pulses",
-      "icon": "🫘",
-      "name": "Pulses",
-      "items": [
-        { "name": "Bengal Gram, Dhal", "level": "very_high", "value": 919 },
-        { "name": "Cowpea, White", "level": "very_high", "value": 1243 },
-        { "name": "Green Gram, Whole", "level": "very_high", "value": 1127 },
-        { "name": "Lentils, Dhal", "level": "very_high", "value": 798 }
-      ]
-    },
-    {
-      "id": "vegetables",
-      "icon": "🥦",
-      "name": "Vegetables",
-      "items": [
-        { "name": "Snake Gourd, Dark Green", "level": "medium", "value": 104 },
-        { "name": "Cho Cho Marrow", "level": "medium", "value": 141 },
-        { "name": "Ridge Gourd", "level": "medium", "value": 121 },
-        { "name": "Spiny Gourd / Thumba Karavila", "level": "medium", "value": 146 },
-        { "name": "Ambarella", "level": "medium", "value": 174 },
-        { "name": "Bean, Scarlet, Tender", "level": "medium", "value": 163 },
-        { "name": "Brinjal, Chinese Eggplant", "level": "medium", "value": 178 },
-        { "name": "Capsicum, Green", "level": "medium", "value": 157 },
-        { "name": "Cucumber, Persian", "level": "medium", "value": 149 },
-        { "name": "Mango, Green, Raw", "level": "medium", "value": 165 },
-        { "name": "Papaya, Raw", "level": "medium", "value": 177 },
-        { "name": "Pumpkin, Green, Cylindrical", "level": "medium", "value": 186 },
-        { "name": "Tomato, Ripe, Local", "level": "medium", "value": 190 },
-        { "name": "Bitter Gourd, Short", "level": "high", "value": 235 },
-        { "name": "Brinjal, Pandora Striped", "level": "high", "value": 260 },
-        { "name": "Cabbage, Greens", "level": "high", "value": 213 },
-        { "name": "Capsicum, Local", "level": "high", "value": 240 },
-        { "name": "Cauliflower", "level": "high", "value": 291 },
-        { "name": "Corn, Baby", "level": "high", "value": 260 },
-        { "name": "Cucumber, Indian", "level": "high", "value": 266 },
-        { "name": "Cucumber, Mangalore / Kakiri", "level": "high", "value": 229 },
-        { "name": "Ladies Fingers (Okra)", "level": "high", "value": 254 },
-        { "name": "Leeks", "level": "high", "value": 252 },
-        { "name": "Lettuce", "level": "high", "value": 228 },
-        { "name": "Plantain, Ash", "level": "high", "value": 271 },
-        { "name": "Pumpkin, Common", "level": "high", "value": 244 },
-        { "name": "Kankun", "level": "high", "value": 271 },
-        { "name": "Ash Gourd", "level": "very_high", "value": 312 },
-        { "name": "Beans, French, Country", "level": "very_high", "value": 389 },
-        { "name": "Beans, Long, Red", "level": "very_high", "value": 304 },
-        { "name": "Bitter Gourd, Elongated", "level": "very_high", "value": 323 },
-        { "name": "Cassava Leaves", "level": "very_high", "value": 500 },
-        { "name": "Drumstick", "level": "very_high", "value": 336 },
-        { "name": "Hummingbird Tree Leaves / Kathurumurunga", "level": "very_high", "value": 674 },
-        { "name": "Indian Pennywort / Gotukola", "level": "very_high", "value": 381 },
-        { "name": "Jackfruit, Raw", "level": "very_high", "value": 341 },
-        { "name": "Jackfruit, Seed, Mature", "level": "very_high", "value": 459 },
-        { "name": "Knol-Khol", "level": "very_high", "value": 367 },
-        { "name": "Malabar Spinach", "level": "very_high", "value": 409 },
-        { "name": "Mushroom, Oyster, White", "level": "very_high", "value": 317 },
-        { "name": "Plantain, Flower", "level": "very_high", "value": 422 },
-        { "name": "Sessile Joyweed / Mukunuwanna", "level": "very_high", "value": 450 },
-        { "name": "Winged Bean", "level": "very_high", "value": 318 }
-      ]
-    },
-    {
-      "id": "fruits",
-      "icon": "🍎",
-      "name": "Fruits",
-      "items": [
-        { "name": "Apple, Red", "level": "low", "value": 94.55 },
-        { "name": "Mangosteen", "level": "low", "value": 46.93 },
-        { "name": "Apple, Green", "level": "medium", "value": 116 },
-        { "name": "Grapes, Seeded, Round, Black", "level": "medium", "value": 171 },
-        { "name": "Jamun / Rose Apple, White", "level": "medium", "value": 115 },
-        { "name": "Lemon, Juice", "level": "medium", "value": 144 },
-        { "name": "Lime", "level": "medium", "value": 200 },
-        { "name": "Mango, Ripe, Vilad", "level": "medium", "value": 171 },
-        { "name": "Papaya, Ripe", "level": "medium", "value": 181 },
-        { "name": "Pear", "level": "medium", "value": 103 },
-        { "name": "Pineapple", "level": "medium", "value": 133 },
-        { "name": "Star Fruit", "level": "medium", "value": 159 },
-        { "name": "Strawberry", "level": "medium", "value": 140 },
-        { "name": "Watermelon, Dark Green", "level": "medium", "value": 134 },
-        { "name": "Banana, Ripe, Cavendish", "level": "high", "value": 261 },
-        { "name": "Dates, Processed", "level": "high", "value": 296 },
-        { "name": "Grapes, Seedless, Oval, Black", "level": "high", "value": 245 },
-        { "name": "Guava, Kilo Pera", "level": "high", "value": 296 },
-        { "name": "Jackfruit, Ripe", "level": "high", "value": 268 },
-        { "name": "Mandarine, Heen Naran", "level": "high", "value": 226 },
-        { "name": "Mango, Ripe, Karattakolumban", "level": "high", "value": 288 },
-        { "name": "Pomegranate, Maroon Seeds", "level": "high", "value": 204 },
-        { "name": "Avocado", "level": "very_high", "value": 377 },
-        { "name": "Banana, Ripe, Ambul", "level": "very_high", "value": 437 },
-        { "name": "Banana, Ripe, Anamalu", "level": "very_high", "value": 449 },
-        { "name": "Ceylon Olive", "level": "very_high", "value": 351 },
-        { "name": "Passion Fruit, Seeded, Yellow", "level": "very_high", "value": 374 },
-        { "name": "Wood Apple", "level": "very_high", "value": 348 }
-      ]
-    },
-    {
-      "id": "fish",
-      "icon": "🐟",
-      "name": "Fish",
-      "items": [
-        { "name": "Sardinella, Spotted / Hurulla", "level": "medium", "value": 155 },
-        { "name": "Scad, Mackerel / Linna", "level": "medium", "value": 160 },
-        { "name": "Anchovy", "level": "high", "value": 270 },
-        { "name": "Sailfish, Indo-Pacific / Thalapath", "level": "high", "value": 282 },
-        { "name": "Sardinella, Goldstripe / Salaya", "level": "high", "value": 284 },
-        { "name": "Tuna, Skipjack / Balaya", "level": "high", "value": 273 },
-        { "name": "Tuna, Yellowfin / Kelawalla", "level": "high", "value": 272 },
-        { "name": "Indian Mackerel", "level": "very_high", "value": 309 },
-        { "name": "Seer Fish / Thora", "level": "very_high", "value": 473 },
-        { "name": "Shark, Silky / Kiri Mora", "level": "very_high", "value": 372 },
-        { "name": "Tuna, Frigate / Alagoduwa", "level": "very_high", "value": 319 },
-        { "name": "Tuna, Mackerel / Balayal", "level": "very_high", "value": 357 }
-      ]
-    },
-    {
-      "id": "shellfish",
-      "icon": "🦐",
-      "name": "Marine & Freshwater Shellfish",
-      "items": [
-        { "name": "Squid, Long Barrel / Dhallal", "level": "medium", "value": 134 },
-        { "name": "Prawn", "level": "medium", "value": 141 },
-        { "name": "Crab, Mud", "level": "high", "value": 227 },
-        { "name": "Tilapia", "level": "high", "value": 255 }
-      ]
-    },
-    {
-      "id": "dairy",
-      "icon": "🥛",
-      "name": "Milk & Dairy Products",
-      "items": [
-        { "name": "Butter, Salted", "level": "low", "value": 24 },
-        { "name": "Cheese, Cottage / Paneer", "level": "low", "value": 83 },
-        { "name": "Curd, Buffalo, Whole", "level": "low", "value": 86.92 },
-        { "name": "Ghee, Cow", "level": "low", "value": 1 },
-        { "name": "Milk, Cow, Liquid, Full Cream", "level": "medium", "value": 131 },
-        { "name": "Milk, Cow, Non Fat", "level": "medium", "value": 131 },
-        { "name": "Yoghurt, Low Fat, Plain", "level": "medium", "value": 141 },
-        { "name": "Milk, Cow, Low Fat", "level": "medium", "value": 168 },
-        { "name": "Milk, Cow, Condensed, Sweetened, Whole", "level": "very_high", "value": 366 },
-        { "name": "Milk, Cow, Powdered, Skimmed", "level": "very_high", "value": 1600 },
-        { "name": "Milk, Cow, Powdered, Whole", "level": "very_high", "value": 1180 }
-      ]
-    },
-    {
-      "id": "eggs",
-      "icon": "🥚",
-      "name": "Eggs",
-      "items": [
-        { "name": "Egg, Country, Whole, Raw", "level": "medium", "value": 117 }
-      ]
-    },
-    {
-      "id": "poultry",
-      "icon": "🍗",
-      "name": "Poultry",
-      "items": [
-        { "name": "Chicken, Broiler, Drumstick, Skinless", "level": "high", "value": 279 },
-        { "name": "Chicken, Broiler, Thigh, Skinless", "level": "high", "value": 257 },
-        { "name": "Chicken, Broiler, Breast, Skinless", "level": "very_high", "value": 302 },
-        { "name": "Chicken, Country, Leg, With Skin", "level": "very_high", "value": 365 }
-      ]
-    },
-    {
-      "id": "meat",
-      "icon": "🥩",
-      "name": "Meat",
-      "items": [
-        { "name": "Beef, Liver", "level": "high", "value": 286 },
-        { "name": "Pork, Shoulder", "level": "high", "value": 243 },
-        { "name": "Beef, Chops", "level": "very_high", "value": 367 },
-        { "name": "Goat, Chops", "level": "very_high", "value": 333 }
-      ]
-    },
-    {
-      "id": "nuts",
-      "icon": "🥜",
-      "name": "Nuts & Seeds",
-      "items": [
-        { "name": "Almond", "level": "very_high", "value": 679 },
-        { "name": "Cashew Nut", "level": "very_high", "value": 645 },
-        { "name": "Ground Nut (Peanut)", "level": "very_high", "value": 664 }
-      ]
-    }
-  ]
 }
