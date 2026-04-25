@@ -243,21 +243,31 @@
 //  LANGUAGE DATA (LOADED FROM JSON FILES)
 // ═══════════════════════════════════════════
 const LANG_FILES = { en: 'en.json', si: 'si.json', ta: 'ta.json' };
+const LANG_NAMES = { en: 'English', si: 'Sinhala', ta: 'Tamil' };
 const DATA_CACHE = {};
 
 async function loadLanguageData(lang) {
   if (DATA_CACHE[lang]) return DATA_CACHE[lang];
+  const requestErr = (code, message) => {
+    const err = new Error(message);
+    err.code = code;
+    return err;
+  };
+  let res;
   try {
-    const res = await fetch(LANG_FILES[lang]);
-    if (!res.ok) throw new Error(`Failed to load ${LANG_FILES[lang]}: ${res.status} ${res.statusText}`);
+    res = await fetch(LANG_FILES[lang]);
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    throw requestErr('request', `Request error while fetching ${LANG_FILES[lang]}: ${msg}`);
+  }
+  if (!res.ok) throw requestErr('http', `Failed to load ${LANG_FILES[lang]}: ${res.status} ${res.statusText}`);
+  try {
     const json = await res.json();
     DATA_CACHE[lang] = json;
     return json;
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
-    if (msg.startsWith('Failed to load')) throw err;
-    if (msg.includes('JSON')) throw new Error(`Invalid JSON in ${LANG_FILES[lang]}: ${msg}`);
-    throw new Error(`Request error while fetching ${LANG_FILES[lang]}: ${msg}`);
+    throw requestErr('json', `Invalid JSON in ${LANG_FILES[lang]}: ${msg}`);
   }
 }
 
@@ -290,11 +300,11 @@ async function switchLang(lang) {
     renderAll();
   } catch (err) {
     console.error('Language load failed:', err);
-    const targetLanguage = lang.toUpperCase();
-    const message = String(err?.message || err);
-    const detail = message.startsWith('Invalid JSON')
+    const targetLanguage = LANG_NAMES[lang] || lang.toUpperCase();
+    const code = err && typeof err === 'object' ? err.code : '';
+    const detail = code === 'json'
       ? 'The language data file is invalid.'
-      : message.startsWith('Failed to load')
+      : code === 'http'
         ? 'The language data file could not be loaded from the server.'
         : 'The language data request failed.';
     const alertText = currentData
