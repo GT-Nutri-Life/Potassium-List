@@ -247,21 +247,18 @@ const DATA_CACHE = {};
 
 async function loadLanguageData(lang) {
   if (DATA_CACHE[lang]) return DATA_CACHE[lang];
-  let res;
   try {
-    res = await fetch(LANG_FILES[lang]);
+    const res = await fetch(LANG_FILES[lang]);
+    if (!res.ok) throw new Error(`Failed to load ${LANG_FILES[lang]}: ${res.status} ${res.statusText}`);
+    const json = await res.json();
+    DATA_CACHE[lang] = json;
+    return json;
   } catch (err) {
-    throw new Error(`Network error while fetching ${LANG_FILES[lang]}: ${err?.message || err}`);
+    const msg = err?.message || String(err);
+    if (msg.startsWith('Failed to load')) throw err;
+    if (msg.includes('JSON')) throw new Error(`Invalid JSON in ${LANG_FILES[lang]}: ${msg}`);
+    throw new Error(`Request error while fetching ${LANG_FILES[lang]}: ${msg}`);
   }
-  if (!res.ok) throw new Error(`Failed to load ${LANG_FILES[lang]}: ${res.status} ${res.statusText}`);
-  let json;
-  try {
-    json = await res.json();
-  } catch (err) {
-    throw new Error(`Invalid JSON in ${LANG_FILES[lang]}`);
-  }
-  DATA_CACHE[lang] = json;
-  return json;
 }
 
 // ═══════════════════════════════════════════
@@ -294,9 +291,15 @@ async function switchLang(lang) {
   } catch (err) {
     console.error('Language load failed:', err);
     const targetLanguage = lang.toUpperCase();
+    const message = String(err?.message || err);
+    const detail = message.startsWith('Invalid JSON')
+      ? 'The language data file is invalid.'
+      : message.startsWith('Failed to load')
+        ? 'The language data file could not be loaded from the server.'
+        : 'The language data request failed.';
     alert(currentData
-      ? `Failed to switch to ${targetLanguage}. Please try again and check your network connection.`
-      : `Failed to load ${targetLanguage} data. Please refresh and check your network connection. See browser console for details.`);
+      ? `Failed to switch to ${targetLanguage}. ${detail} See browser console for details.`
+      : `Failed to load ${targetLanguage} data. ${detail} Please refresh and see browser console for details.`);
   }
 }
 
