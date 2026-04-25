@@ -251,10 +251,15 @@ async function loadLanguageData(lang) {
   try {
     res = await fetch(LANG_FILES[lang]);
   } catch (err) {
-    throw new Error(`Network error loading ${LANG_FILES[lang]}`);
+    throw new Error(`Network error while fetching ${LANG_FILES[lang]}`);
   }
   if (!res.ok) throw new Error(`Failed to load ${LANG_FILES[lang]}: ${res.status} ${res.statusText}`);
-  const json = await res.json();
+  let json;
+  try {
+    json = await res.json();
+  } catch (err) {
+    throw new Error(`Invalid JSON in ${LANG_FILES[lang]}`);
+  }
   DATA_CACHE[lang] = json;
   return json;
 }
@@ -289,8 +294,8 @@ async function switchLang(lang) {
   } catch (err) {
     console.error('Language load failed:', err);
     alert(currentData
-      ? 'Unable to switch language right now. Please try again.'
-      : 'Unable to load language data. Please refresh and try again.');
+      ? 'Unable to switch language right now. Please try again and check your network connection.'
+      : 'Unable to load language data. Please refresh and check your network connection. See browser console for details.');
   }
 }
 
