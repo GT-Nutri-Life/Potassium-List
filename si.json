@@ -45,7 +45,7 @@
             "name":"ධාන්‍ය හා ධාන්‍ය නිෂ්පාදන",
             "items":[
                {
-                  "name":"කෙකුළු සුදු සහල් / ",
+                  "name":"සුදු කැකුළු සහල්",
                   "level":"low",
                   "value":87.92
                },
@@ -60,42 +60,42 @@
                   "value":148
                },
                {
-                  "name":"කාලු හිනාති සහල්",
+                  "name":"කළු හීනටි සහල් ",
                   "level":"medium",
                   "value":149
                },
                {
-                  "name":"කේරි සඹා සහල්",
+                  "name":"කීරි සම්බා සහල් ",
                   "level":"medium",
                   "value":155
                },
                {
-                  "name":"කෙකුළු රතු සහල්",
+                  "name":"රතු කැකුළු සහල් ",
                   "level":"medium",
                   "value":169
                },
                {
-                  "name":"නාඩු සුදු සහල්",
+                  "name":"සුදු නාඩු සහල් ",
                   "level":"medium",
                   "value":147
                },
                {
-                  "name":"සඹා සහල්",
+                  "name":"සම්බා සහල් ",
                   "level":"medium",
                   "value":154
                },
                {
-                  "name":"සඹා කෙකුළු සහල්",
+                  "name":"සම්බා කැකුළු සහල් ",
                   "level":"medium",
                   "value":149
                },
                {
-                  "name":"ගොදම්බර පිටි (ආටා)",
+                  "name":"ගොදම්බර පිටි (ආටා පිටි) ",
                   "level":"medium",
                   "value":140
                },
                {
-                  "name":"තිරිඟු පිටි (සැකසූ)",
+                  "name":"පෙර සැකසු තිරිගු පිටි ",
                   "level":"high",
                   "value":290
                },
@@ -142,32 +142,32 @@
                   "value":276
                },
                {
-                  "name":"ලාසියා හොරණ",
+                  "name":"කොහිල (Lasia Stalk)",
                   "level":"very_high",
                   "value":611
                },
                {
-                  "name":"කොළකැඳ (Colocasia)",
+                  "name":"ගහල (Colocasia)",
                   "level":"very_high",
                   "value":511
                },
                {
-                  "name":"නෙළුම් ගෙඩිය",
+                  "name":"නෙලුම් මුල්",
                   "level":"very_high",
                   "value":611
                },
                {
-                  "name":"දුඹුරු සමේ අල",
+                  "name":"අර්තාපල්",
                   "level":"very_high",
                   "value":541
                },
                {
-                  "name":"රතු සමේ රාබු",
+                  "name":"රතු රාබු",
                   "level":"very_high",
                   "value":308
                },
                {
-                  "name":"රෝස සමේ මිහිකෑල",
+                  "name":"බතල",
                   "level":"very_high",
                   "value":329
                }
@@ -179,12 +179,12 @@
             "name":"රනිල",
             "items":[
                {
-                  "name":"කඩල දාල",
+                  "name":"කඩල",
                   "level":"very_high",
                   "value":919
                },
                {
-                  "name":"සුදු සෝයා (Cowpea)",
+                  "name":"කවුපි (Cowpea)",
                   "level":"very_high",
                   "value":1243
                },
@@ -194,7 +194,7 @@
                   "value":1127
                },
                {
-                  "name":"පරිප්පු දාල",
+                  "name":"පරිප්පු",
                   "level":"very_high",
                   "value":798
                }
@@ -206,87 +206,87 @@
             "name":"එළවළු",
             "items":[
                {
-                  "name":"කළු සාප්‍රෝ",
+                  "name":"පතෝල",
                   "level":"medium",
                   "value":104
                },
                {
-                  "name":"Cho Cho Marrow",
+                  "name":"චව් චව්",
                   "level":"medium",
                   "value":141
                },
                {
-                  "name":"වැල් කරා",
+                  "name":"වැටකොළු",
                   "level":"medium",
                   "value":121
                },
                {
-                  "name":"තිඹිරි කරවිල",
+                  "name":"තුඹ කරවිල",
                   "level":"medium",
                   "value":146
                },
                {
-                  "name":"අඹරෙල්ලා",
+                  "name":"ඇඹරැල්ලා",
                   "level":"medium",
                   "value":174
                },
                {
-                  "name":"ළා රතු බෝංචි",
+                  "name":"බෝංචි",
                   "level":"medium",
                   "value":163
                },
                {
-                  "name":"චයිනීස් බටු",
+                  "name":"වම්බටු",
                   "level":"medium",
                   "value":178
                },
                {
-                  "name":"කොළ ගම්මිරිස්",
+                  "name":"කමාළු මිරිස්",
                   "level":"medium",
                   "value":157
                },
                {
-                  "name":"පර්සියානු පිපිඤ්ඤා",
+                  "name":"පිපිඤ්ඤා",
                   "level":"medium",
                   "value":149
                },
                {
-                  "name":"ලෙලො ගෙඩිය (ලේලො)",
+                  "name":"අමු අඹ",
                   "level":"medium",
                   "value":165
                },
                {
-                  "name":"ගෑළ (අමු)",
+                  "name":"අමු ගස්ලබු",
                   "level":"medium",
                   "value":177
                },
                {
-                  "name":"හරිත ළාල",
+                  "name":"වට්ටක්කා",
                   "level":"medium",
                   "value":186
                },
                {
-                  "name":"ෆ්‍රෙෂ් ලෝකල් තක්කාලි",
+                  "name":"දේශීය තක්කාලි",
                   "level":"medium",
                   "value":190
                },
                {
-                  "name":"දිවුල් කරවිල (කොට)",
+                  "name":"තුඹ කරවිල",
                   "level":"high",
                   "value":235
                },
                {
-                  "name":"පාලොරා ගෝරකා",
+                  "name":"වම්බටු",
                   "level":"high",
                   "value":260
                },
                {
-                  "name":"ගෝවා කොළ",
+                  "name":"ගෝවා",
                   "level":"high",
                   "value":213
                },
                {
-                  "name":"ප්‍රාදේශීය ගම්මිරිස්",
+                  "name":"මලු මිරිස් (පොඩි එක)",
                   "level":"high",
                   "value":240
                },
