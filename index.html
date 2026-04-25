@@ -247,8 +247,8 @@ const DATA_CACHE = {};
 
 async function loadLanguageData(lang) {
   if (DATA_CACHE[lang]) return DATA_CACHE[lang];
-  const res = await fetch(LANG_FILES[lang], { cache: 'no-cache' });
-  if (!res.ok) throw new Error(`Failed to load ${LANG_FILES[lang]}: ${res.status}`);
+  const res = await fetch(LANG_FILES[lang]);
+  if (!res.ok) throw new Error(`Failed to load ${LANG_FILES[lang]}: ${res.status} ${res.statusText}`);
   const json = await res.json();
   DATA_CACHE[lang] = json;
   return json;
@@ -283,6 +283,9 @@ async function switchLang(lang) {
     renderAll();
   } catch (err) {
     console.error('Language load failed:', err);
+    if (!currentData) {
+      alert('Unable to load language data. Please refresh and try again.');
+    }
   }
 }
 
