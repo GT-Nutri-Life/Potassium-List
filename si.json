@@ -1,1 +1,817 @@
-
+{
+  "lang":"si",
+      "dir":"ltr",
+      "meta":{
+         "title":"පොටෑසියම් ආහාර මාර්ගෝපදේශය",
+         "subtitle":"දෛනික ආහාරවල පොටෑසියම් අන්තර්ගතය සඳහා සම්පූර්ණ මාර්ගෝපදේශය",
+         "unit":"ආහාරයේ ග්‍රෑම් 100 කට mg ප්‍රමාණය",
+         "credit":"ආහාර තොරතුරු සකස් කළේ",
+         "dietitian":"ගයාත්‍රි දිසානායක",
+         "designation":"ආහාර හා පෝෂනවෙදිනි වෛද්‍ය",
+         "developer_label":"වෙබ් යෙදුම සංවර්ධනය කළේ",
+         "developer_name":"අශේන් විජේසිංහ",
+         "developer_url":"https://ashenwijesingha.github.io/Meal-Plan-Generator/",
+         "source":"මූලාශ්‍රය: ශ්‍රී ලංකා ආහාර සංයුතිය දත්ත ගොනුව",
+         "search_placeholder":"ආහාරයක් සොයන්න...",
+         "all_label":"සියලු කාණ්ඩ",
+         "language_label":"භාෂාව"
+      },
+      "levels":{
+         "low":{
+            "label":"අඩු පොටෑසියම්",
+            "range":"mg 100 හෝ ඊට අඩු",
+            "color":"low"
+         },
+         "medium":{
+            "label":"මධ්‍යම පොටෑසියම්",
+            "range":"mg 101–200",
+            "color":"medium"
+         },
+         "high":{
+            "label":"ඉහළ පොටෑසියම්",
+            "range":"mg 201–300",
+            "color":"high"
+         },
+         "very_high":{
+            "label":"ඉතා ඉහළ පොටෑසියම්",
+            "range":"mg 300 හෝ ඊට වැඩි",
+            "color":"very_high"
+         }
+      },
+      "categories":[
+         {
+            "id":"cereals",
+            "icon":"🌾",
+            "name":"ධාන්‍ය හා ධාන්‍ය නිෂ්පාදන",
+            "items":[
+               {
+                  "name":"කෙකුළු සුදු සහල් / ",
+                  "level":"low",
+                  "value":87.92
+               },
+               {
+                  "name":"වර්මිසෙලි සහල්",
+                  "level":"low",
+                  "value":61.98
+               },
+               {
+                  "name":"සහල් පිටි",
+                  "level":"medium",
+                  "value":148
+               },
+               {
+                  "name":"කාලු හිනාති සහල්",
+                  "level":"medium",
+                  "value":149
+               },
+               {
+                  "name":"කේරි සඹා සහල්",
+                  "level":"medium",
+                  "value":155
+               },
+               {
+                  "name":"කෙකුළු රතු සහල්",
+                  "level":"medium",
+                  "value":169
+               },
+               {
+                  "name":"නාඩු සුදු සහල්",
+                  "level":"medium",
+                  "value":147
+               },
+               {
+                  "name":"සඹා සහල්",
+                  "level":"medium",
+                  "value":154
+               },
+               {
+                  "name":"සඹා කෙකුළු සහල්",
+                  "level":"medium",
+                  "value":149
+               },
+               {
+                  "name":"ගොදම්බර පිටි (ආටා)",
+                  "level":"medium",
+                  "value":140
+               },
+               {
+                  "name":"තිරිඟු පිටි (සැකසූ)",
+                  "level":"high",
+                  "value":290
+               },
+               {
+                  "name":"බාර්ලි",
+                  "level":"high",
+                  "value":261
+               },
+               {
+                  "name":"කුරක්කන්",
+                  "level":"very_high",
+                  "value":418
+               }
+            ]
+         },
+         {
+            "id":"roots",
+            "icon":"🥔",
+            "name":"මූල හා කන්ද",
+            "items":[
+               {
+                  "name":"බීට්රූට්",
+                  "level":"high",
+                  "value":298
+               },
+               {
+                  "name":"කැරට්",
+                  "level":"high",
+                  "value":250
+               },
+               {
+                  "name":"සුදු රාබු (දිගු)",
+                  "level":"high",
+                  "value":248
+               },
+               {
+                  "name":"සුදු රාබු (රවුම්)",
+                  "level":"high",
+                  "value":298
+               },
+               {
+                  "name":"මඤ්ඤොක්කා",
+                  "level":"high",
+                  "value":276
+               },
+               {
+                  "name":"ලාසියා හොරණ",
+                  "level":"very_high",
+                  "value":611
+               },
+               {
+                  "name":"කොළකැඳ (Colocasia)",
+                  "level":"very_high",
+                  "value":511
+               },
+               {
+                  "name":"නෙළුම් ගෙඩිය",
+                  "level":"very_high",
+                  "value":611
+               },
+               {
+                  "name":"දුඹුරු සමේ අල",
+                  "level":"very_high",
+                  "value":541
+               },
+               {
+                  "name":"රතු සමේ රාබු",
+                  "level":"very_high",
+                  "value":308
+               },
+               {
+                  "name":"රෝස සමේ මිහිකෑල",
+                  "level":"very_high",
+                  "value":329
+               }
+            ]
+         },
+         {
+            "id":"pulses",
+            "icon":"🫘",
+            "name":"රනිල",
+            "items":[
+               {
+                  "name":"කඩල දාල",
+                  "level":"very_high",
+                  "value":919
+               },
+               {
+                  "name":"සුදු සෝයා (Cowpea)",
+                  "level":"very_high",
+                  "value":1243
+               },
+               {
+                  "name":"මුං ඇට (සම්පූර්ණ)",
+                  "level":"very_high",
+                  "value":1127
+               },
+               {
+                  "name":"පරිප්පු දාල",
+                  "level":"very_high",
+                  "value":798
+               }
+            ]
+         },
+         {
+            "id":"vegetables",
+            "icon":"🥦",
+            "name":"එළවළු",
+            "items":[
+               {
+                  "name":"කළු සාප්‍රෝ",
+                  "level":"medium",
+                  "value":104
+               },
+               {
+                  "name":"Cho Cho Marrow",
+                  "level":"medium",
+                  "value":141
+               },
+               {
+                  "name":"වැල් කරා",
+                  "level":"medium",
+                  "value":121
+               },
+               {
+                  "name":"තිඹිරි කරවිල",
+                  "level":"medium",
+                  "value":146
+               },
+               {
+                  "name":"අඹරෙල්ලා",
+                  "level":"medium",
+                  "value":174
+               },
+               {
+                  "name":"ළා රතු බෝංචි",
+                  "level":"medium",
+                  "value":163
+               },
+               {
+                  "name":"චයිනීස් බටු",
+                  "level":"medium",
+                  "value":178
+               },
+               {
+                  "name":"කොළ ගම්මිරිස්",
+                  "level":"medium",
+                  "value":157
+               },
+               {
+                  "name":"පර්සියානු පිපිඤ්ඤා",
+                  "level":"medium",
+                  "value":149
+               },
+               {
+                  "name":"ලෙලො ගෙඩිය (ලේලො)",
+                  "level":"medium",
+                  "value":165
+               },
+               {
+                  "name":"ගෑළ (අමු)",
+                  "level":"medium",
+                  "value":177
+               },
+               {
+                  "name":"හරිත ළාල",
+                  "level":"medium",
+                  "value":186
+               },
+               {
+                  "name":"ෆ්‍රෙෂ් ලෝකල් තක්කාලි",
+                  "level":"medium",
+                  "value":190
+               },
+               {
+                  "name":"දිවුල් කරවිල (කොට)",
+                  "level":"high",
+                  "value":235
+               },
+               {
+                  "name":"පාලොරා ගෝරකා",
+                  "level":"high",
+                  "value":260
+               },
+               {
+                  "name":"ගෝවා කොළ",
+                  "level":"high",
+                  "value":213
+               },
+               {
+                  "name":"ප්‍රාදේශීය ගම්මිරිස්",
+                  "level":"high",
+                  "value":240
+               },
+               {
+                  "name":"ගොවා / Cauliflower",
+                  "level":"high",
+                  "value":291
+               },
+               {
+                  "name":"Baby Corn",
+                  "level":"high",
+                  "value":260
+               },
+               {
+                  "name":"ඉන්දියානු පිපිඤ්ඤා",
+                  "level":"high",
+                  "value":266
+               },
+               {
+                  "name":"කකිරි / Kakiri",
+                  "level":"high",
+                  "value":229
+               },
+               {
+                  "name":"බෙන්ඩි",
+                  "level":"high",
+                  "value":254
+               },
+               {
+                  "name":"ලීක්",
+                  "level":"high",
+                  "value":252
+               },
+               {
+                  "name":"ලෙටිස්",
+                  "level":"high",
+                  "value":228
+               },
+               {
+                  "name":"ළා හකුරු කෙසෙල්",
+                  "level":"high",
+                  "value":271
+               },
+               {
+                  "name":"ළාල",
+                  "level":"high",
+                  "value":244
+               },
+               {
+                  "name":"කංකුන්",
+                  "level":"high",
+                  "value":271
+               },
+               {
+                  "name":"තිත්ත කෙවුම්",
+                  "level":"very_high",
+                  "value":312
+               },
+               {
+                  "name":"ෆ්‍රෙංච් බෝංචි",
+                  "level":"very_high",
+                  "value":389
+               },
+               {
+                  "name":"දිගු රතු බෝංචි",
+                  "level":"very_high",
+                  "value":304
+               },
+               {
+                  "name":"දිගු කරවිල",
+                  "level":"very_high",
+                  "value":323
+               },
+               {
+                  "name":"මඤ්ඤොක්කා කොළ",
+                  "level":"very_high",
+                  "value":500
+               },
+               {
+                  "name":"මුරුංගා",
+                  "level":"very_high",
+                  "value":336
+               },
+               {
+                  "name":"කතුරු මුරුංගා",
+                  "level":"very_high",
+                  "value":674
+               },
+               {
+                  "name":"ගොටුකෝල",
+                  "level":"very_high",
+                  "value":381
+               },
+               {
+                  "name":"පොළොස් (අමු)",
+                  "level":"very_high",
+                  "value":341
+               },
+               {
+                  "name":"කොස් ඇට (හදිස්සි)",
+                  "level":"very_high",
+                  "value":459
+               },
+               {
+                  "name":"නොල්කෝල්",
+                  "level":"very_high",
+                  "value":367
+               },
+               {
+                  "name":"ගොරකා (Malabar Spinach)",
+                  "level":"very_high",
+                  "value":409
+               },
+               {
+                  "name":"Oyster Mushroom",
+                  "level":"very_high",
+                  "value":317
+               },
+               {
+                  "name":"කෙහෙල් මල",
+                  "level":"very_high",
+                  "value":422
+               },
+               {
+                  "name":"මුකුණුවැන්න",
+                  "level":"very_high",
+                  "value":450
+               },
+               {
+                  "name":"දිය-බෝංචි",
+                  "level":"very_high",
+                  "value":318
+               }
+            ]
+         },
+         {
+            "id":"fruits",
+            "icon":"🍎",
+            "name":"පලතුරු",
+            "items":[
+               {
+                  "name":"රතු ඇපල්",
+                  "level":"low",
+                  "value":94.55
+               },
+               {
+                  "name":"මංගුස්ටීන්",
+                  "level":"low",
+                  "value":46.93
+               },
+               {
+                  "name":"හරිත ඇපල්",
+                  "level":"medium",
+                  "value":116
+               },
+               {
+                  "name":"රවුම් කළු මිදි",
+                  "level":"medium",
+                  "value":171
+               },
+               {
+                  "name":"ජාම් / Rose Apple",
+                  "level":"medium",
+                  "value":115
+               },
+               {
+                  "name":"ලෙමොං යුෂ",
+                  "level":"medium",
+                  "value":144
+               },
+               {
+                  "name":"දෙහි",
+                  "level":"medium",
+                  "value":200
+               },
+               {
+                  "name":"Vilad ඇඹ (익은)",
+                  "level":"medium",
+                  "value":171
+               },
+               {
+                  "name":"ගෑළ (익은)",
+                  "level":"medium",
+                  "value":181
+               },
+               {
+                  "name":"නාශ්පතිය",
+                  "level":"medium",
+                  "value":103
+               },
+               {
+                  "name":"අන්නාසි",
+                  "level":"medium",
+                  "value":133
+               },
+               {
+                  "name":"ස්ටාර් ෆ්‍රූට්",
+                  "level":"medium",
+                  "value":159
+               },
+               {
+                  "name":"ස්ට්‍රෝබෙරි",
+                  "level":"medium",
+                  "value":140
+               },
+               {
+                  "name":"දිය ලබු",
+                  "level":"medium",
+                  "value":134
+               },
+               {
+                  "name":"Cavendish කෙසෙල් (익은)",
+                  "level":"high",
+                  "value":261
+               },
+               {
+                  "name":"සකුරු (සකසන ලද)",
+                  "level":"high",
+                  "value":296
+               },
+               {
+                  "name":"Seedless ඕවල් කළු මිදි",
+                  "level":"high",
+                  "value":245
+               },
+               {
+                  "name":"කිලෝ පේර",
+                  "level":"high",
+                  "value":296
+               },
+               {
+                  "name":"පොළොස් (익은)",
+                  "level":"high",
+                  "value":268
+               },
+               {
+                  "name":"හීන් නාරං",
+                  "level":"high",
+                  "value":226
+               },
+               {
+                  "name":"කරත්ත කොලොම්බාන් ඇඹ",
+                  "level":"high",
+                  "value":288
+               },
+               {
+                  "name":"දළු ඉදූ",
+                  "level":"high",
+                  "value":204
+               },
+               {
+                  "name":"අඩෝ (Avocado)",
+                  "level":"very_high",
+                  "value":377
+               },
+               {
+                  "name":"අඹුල් කෙසෙල් (익은)",
+                  "level":"very_high",
+                  "value":437
+               },
+               {
+                  "name":"අනාමලු කෙසෙල් (익은)",
+                  "level":"very_high",
+                  "value":449
+               },
+               {
+                  "name":"ශ්‍රී ලාංකික ඔලිව්",
+                  "level":"very_high",
+                  "value":351
+               },
+               {
+                  "name":"ගිනිකෙළිය (Passion Fruit)",
+                  "level":"very_high",
+                  "value":374
+               },
+               {
+                  "name":"දිවුල් (Wood Apple)",
+                  "level":"very_high",
+                  "value":348
+               }
+            ]
+         },
+         {
+            "id":"fish",
+            "icon":"🐟",
+            "name":"මාළු",
+            "items":[
+               {
+                  "name":"හුරුල්ලා",
+                  "level":"medium",
+                  "value":155
+               },
+               {
+                  "name":"ලිනා (Scad/Mackerel)",
+                  "level":"medium",
+                  "value":160
+               },
+               {
+                  "name":"නෙත්‍රලි",
+                  "level":"high",
+                  "value":270
+               },
+               {
+                  "name":"තලපත්",
+                  "level":"high",
+                  "value":282
+               },
+               {
+                  "name":"සලාය",
+                  "level":"high",
+                  "value":284
+               },
+               {
+                  "name":"බලාය (Skipjack Tuna)",
+                  "level":"high",
+                  "value":273
+               },
+               {
+                  "name":"කේලවල්ලා (Yellowfin Tuna)",
+                  "level":"high",
+                  "value":272
+               },
+               {
+                  "name":"ඉන්දියානු මාළු",
+                  "level":"very_high",
+                  "value":309
+               },
+               {
+                  "name":"ත‍ොර",
+                  "level":"very_high",
+                  "value":473
+               },
+               {
+                  "name":"කිරිමෝරා",
+                  "level":"very_high",
+                  "value":372
+               },
+               {
+                  "name":"ඇල ගොඩුවා",
+                  "level":"very_high",
+                  "value":319
+               },
+               {
+                  "name":"බලාල්",
+                  "level":"very_high",
+                  "value":357
+               }
+            ]
+         },
+         {
+            "id":"shellfish",
+            "icon":"🦐",
+            "name":"කල්ක්කා හා ඉස්සන්",
+            "items":[
+               {
+                  "name":"ඩල්ලාල් (Squid)",
+                  "level":"medium",
+                  "value":134
+               },
+               {
+                  "name":"ඉස්සා",
+                  "level":"medium",
+                  "value":141
+               },
+               {
+                  "name":"කකුළු",
+                  "level":"high",
+                  "value":227
+               },
+               {
+                  "name":"තිලාපියා",
+                  "level":"high",
+                  "value":255
+               }
+            ]
+         },
+         {
+            "id":"dairy",
+            "icon":"🥛",
+            "name":"කිරි හා කිරි නිෂ්පාදන",
+            "items":[
+               {
+                  "name":"බටර් (ලුණු)",
+                  "level":"low",
+                  "value":24
+               },
+               {
+                  "name":"Paneer / Cottage Cheese",
+                  "level":"low",
+                  "value":83
+               },
+               {
+                  "name":"මී හරක් මෝරු",
+                  "level":"low",
+                  "value":86.92
+               },
+               {
+                  "name":"ගිතෙල්",
+                  "level":"low",
+                  "value":1
+               },
+               {
+                  "name":"ගව කිරි (Full Cream)",
+                  "level":"medium",
+                  "value":131
+               },
+               {
+                  "name":"ගව කිරි (Non Fat)",
+                  "level":"medium",
+                  "value":131
+               },
+               {
+                  "name":"Yoghurt (Low Fat)",
+                  "level":"medium",
+                  "value":141
+               },
+               {
+                  "name":"ගව කිරි (Low Fat)",
+                  "level":"medium",
+                  "value":168
+               },
+               {
+                  "name":"Condensed කිරි",
+                  "level":"very_high",
+                  "value":366
+               },
+               {
+                  "name":"කිරිපිටි (Skimmed)",
+                  "level":"very_high",
+                  "value":1600
+               },
+               {
+                  "name":"කිරිපිටි (Whole)",
+                  "level":"very_high",
+                  "value":1180
+               }
+            ]
+         },
+         {
+            "id":"eggs",
+            "icon":"🥚",
+            "name":"බිත්තර",
+            "items":[
+               {
+                  "name":"ගෙදර කිකිළි බිත්තරය (අමු)",
+                  "level":"medium",
+                  "value":117
+               }
+            ]
+         },
+         {
+            "id":"poultry",
+            "icon":"🍗",
+            "name":"කුකුළු මස්",
+            "items":[
+               {
+                  "name":"Broiler කකුල (Skinless)",
+                  "level":"high",
+                  "value":279
+               },
+               {
+                  "name":"Broiler කලවා (Skinless)",
+                  "level":"high",
+                  "value":257
+               },
+               {
+                  "name":"Broiler පපු (Skinless)",
+                  "level":"very_high",
+                  "value":302
+               },
+               {
+                  "name":"ගෙදර කිකිළි කකුල (සමිනිස)",
+                  "level":"very_high",
+                  "value":365
+               }
+            ]
+         },
+         {
+            "id":"meat",
+            "icon":"🥩",
+            "name":"මස්",
+            "items":[
+               {
+                  "name":"හරක් ෙකොට (Liver)",
+                  "level":"high",
+                  "value":286
+               },
+               {
+                  "name":"ඌරු ළය",
+                  "level":"high",
+                  "value":243
+               },
+               {
+                  "name":"හරක් Chops",
+                  "level":"very_high",
+                  "value":367
+               },
+               {
+                  "name":"එළදෙනු Chops",
+                  "level":"very_high",
+                  "value":333
+               }
+            ]
+         },
+         {
+            "id":"nuts",
+            "icon":"🥜",
+            "name":"ගෙඩි හා බීජ",
+            "items":[
+               {
+                  "name":"ආමන්ඩ්",
+                  "level":"very_high",
+                  "value":679
+               },
+               {
+                  "name":"කජු",
+                  "level":"very_high",
+                  "value":645
+               },
+               {
+                  "name":"රටකජු",
+                  "level":"very_high",
+                  "value":664
+               }
+            ]
+         }
+      ]
+}
