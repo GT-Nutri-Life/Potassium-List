@@ -1,1 +1,817 @@
-
+{
+  "lang":"ta",
+      "dir":"ltr",
+      "meta":{
+         "title":"பொட்டாசியம் உணவு வழிகாட்டி",
+         "subtitle":"அன்றாட உணவுகளில் பொட்டாசியம் உள்ளடக்கத்திற்கான முழுமையான வழிகாட்டி",
+         "unit":"100 கிராம் உணவுக்கு mg அளவு",
+         "credit":"உணவு தகவல்களை உருவாக்கியவர்",
+         "dietitian":"காயத்ரி திஸ்ஸநாயக்க",
+         "designation":"உணவியல் நிபுணர் & ஊட்டச்சத்து நிபுணர்",
+         "developer_label":"வலைப்பயன்பாடு உருவாக்கியவர்",
+         "developer_name":"அஷேன் விஜேசிங்க",
+         "developer_url":"https://ashenwijesingha.github.io/Meal-Plan-Generator/",
+         "source":"ஆதாரம்: இலங்கை உணவு கூறு தரவுத்தளம்",
+         "search_placeholder":"உணவை தேடுங்கள்...",
+         "all_label":"அனைத்து வகைகள்",
+         "language_label":"மொழி"
+      },
+      "levels":{
+         "low":{
+            "label":"குறைந்த பொட்டாசியம்",
+            "range":"mg 100 அல்லது அதற்கும் குறைவு",
+            "color":"low"
+         },
+         "medium":{
+            "label":"நடுத்தர பொட்டாசியம்",
+            "range":"mg 101–200",
+            "color":"medium"
+         },
+         "high":{
+            "label":"அதிக பொட்டாசியம்",
+            "range":"mg 201–300",
+            "color":"high"
+         },
+         "very_high":{
+            "label":"மிக அதிக பொட்டாசியம்",
+            "range":"mg 300 அல்லது அதற்கும் அதிகம்",
+            "color":"very_high"
+         }
+      },
+      "categories":[
+         {
+            "id":"cereals",
+            "icon":"🌾",
+            "name":"தானியங்கள் & தானிய பொருட்கள்",
+            "items":[
+               {
+                  "name":"கெக்குளு வெள்ளை அரிசி",
+                  "level":"low",
+                  "value":87.92
+               },
+               {
+                  "name":"அரிசி வெர்மிசெல்லி",
+                  "level":"low",
+                  "value":61.98
+               },
+               {
+                  "name":"அரிசி செதில்கள்",
+                  "level":"medium",
+                  "value":148
+               },
+               {
+                  "name":"காளு ஹினாட்டி அரிசி",
+                  "level":"medium",
+                  "value":149
+               },
+               {
+                  "name":"கேரி சம்பா அரிசி",
+                  "level":"medium",
+                  "value":155
+               },
+               {
+                  "name":"கெக்குளு சிவப்பு அரிசி",
+                  "level":"medium",
+                  "value":169
+               },
+               {
+                  "name":"நாடு வெள்ளை அரிசி",
+                  "level":"medium",
+                  "value":147
+               },
+               {
+                  "name":"சம்பா அரிசி",
+                  "level":"medium",
+                  "value":154
+               },
+               {
+                  "name":"சம்பா கெக்குளு அரிசி",
+                  "level":"medium",
+                  "value":149
+               },
+               {
+                  "name":"கோதுமை மாவு (ஆட்டா)",
+                  "level":"medium",
+                  "value":140
+               },
+               {
+                  "name":"கோதுமை மாவு (சுத்திகரிக்கப்பட்ட)",
+                  "level":"high",
+                  "value":290
+               },
+               {
+                  "name":"வாற்கோதுமை (Barley)",
+                  "level":"high",
+                  "value":261
+               },
+               {
+                  "name":"கேழ்வரகு (Kurakkan)",
+                  "level":"very_high",
+                  "value":418
+               }
+            ]
+         },
+         {
+            "id":"roots",
+            "icon":"🥔",
+            "name":"வேர்கள் & கிழங்குகள்",
+            "items":[
+               {
+                  "name":"பீட்ரூட்",
+                  "level":"high",
+                  "value":298
+               },
+               {
+                  "name":"கேரட்",
+                  "level":"high",
+                  "value":250
+               },
+               {
+                  "name":"வெள்ளை முள்ளங்கி (நீளமான)",
+                  "level":"high",
+                  "value":248
+               },
+               {
+                  "name":"வெள்ளை முள்ளங்கி (வட்டமான)",
+                  "level":"high",
+                  "value":298
+               },
+               {
+                  "name":"மரவள்ளி / தபியோக்கா",
+                  "level":"high",
+                  "value":276
+               },
+               {
+                  "name":"லேசியா தண்டு",
+                  "level":"very_high",
+                  "value":611
+               },
+               {
+                  "name":"சேப்பங்கிழங்கு (Colocasia)",
+                  "level":"very_high",
+                  "value":511
+               },
+               {
+                  "name":"தாமரை வேர்",
+                  "level":"very_high",
+                  "value":611
+               },
+               {
+                  "name":"உருளைக்கிழங்கு (பழுப்பு தோல்)",
+                  "level":"very_high",
+                  "value":541
+               },
+               {
+                  "name":"சிவப்பு தோல் முள்ளங்கி",
+                  "level":"very_high",
+                  "value":308
+               },
+               {
+                  "name":"இளஞ்சிவப்பு தோல் சர்க்கரை வள்ளி",
+                  "level":"very_high",
+                  "value":329
+               }
+            ]
+         },
+         {
+            "id":"pulses",
+            "icon":"🫘",
+            "name":"பயறுவகைகள்",
+            "items":[
+               {
+                  "name":"கடலை பருப்பு",
+                  "level":"very_high",
+                  "value":919
+               },
+               {
+                  "name":"வெள்ளை காராமணி",
+                  "level":"very_high",
+                  "value":1243
+               },
+               {
+                  "name":"பச்சை பயறு (முழுமையான)",
+                  "level":"very_high",
+                  "value":1127
+               },
+               {
+                  "name":"மசூர் பருப்பு",
+                  "level":"very_high",
+                  "value":798
+               }
+            ]
+         },
+         {
+            "id":"vegetables",
+            "icon":"🥦",
+            "name":"காய்கறிகள்",
+            "items":[
+               {
+                  "name":"கருப்பு பூசணி (Snake Gourd)",
+                  "level":"medium",
+                  "value":104
+               },
+               {
+                  "name":"சோ சோ (Chayote)",
+                  "level":"medium",
+                  "value":141
+               },
+               {
+                  "name":"பீர்க்கங்காய்",
+                  "level":"medium",
+                  "value":121
+               },
+               {
+                  "name":"கொத்தவரை (Spiny Gourd)",
+                  "level":"medium",
+                  "value":146
+               },
+               {
+                  "name":"அம்பரெல்லா",
+                  "level":"medium",
+                  "value":174
+               },
+               {
+                  "name":"சிவப்பு அவரை (இளம்)",
+                  "level":"medium",
+                  "value":163
+               },
+               {
+                  "name":"சீன கத்திரி",
+                  "level":"medium",
+                  "value":178
+               },
+               {
+                  "name":"பச்சை குடைமிளகாய்",
+                  "level":"medium",
+                  "value":157
+               },
+               {
+                  "name":"பாரசீக வெள்ளரி",
+                  "level":"medium",
+                  "value":149
+               },
+               {
+                  "name":"பச்சை மாம்பழம் (வெட்டினது)",
+                  "level":"medium",
+                  "value":165
+               },
+               {
+                  "name":"பப்பாளி (பச்சை)",
+                  "level":"medium",
+                  "value":177
+               },
+               {
+                  "name":"பச்சை பூசணிக்காய் (நீளமான)",
+                  "level":"medium",
+                  "value":186
+               },
+               {
+                  "name":"பழுத்த தக்காளி (உள்ளூர்)",
+                  "level":"medium",
+                  "value":190
+               },
+               {
+                  "name":"பாகற்காய் (குட்டை)",
+                  "level":"high",
+                  "value":235
+               },
+               {
+                  "name":"கத்திரி (Pandora)",
+                  "level":"high",
+                  "value":260
+               },
+               {
+                  "name":"முட்டைக்கோஸ் கீரை",
+                  "level":"high",
+                  "value":213
+               },
+               {
+                  "name":"உள்ளூர் குடைமிளகாய்",
+                  "level":"high",
+                  "value":240
+               },
+               {
+                  "name":"காலிஃபிளவர்",
+                  "level":"high",
+                  "value":291
+               },
+               {
+                  "name":"இளம் சோளம் (Baby Corn)",
+                  "level":"high",
+                  "value":260
+               },
+               {
+                  "name":"இந்திய வெள்ளரி",
+                  "level":"high",
+                  "value":266
+               },
+               {
+                  "name":"மங்களூர் வெள்ளரி (காக்கிரி)",
+                  "level":"high",
+                  "value":229
+               },
+               {
+                  "name":"வெண்டைக்காய்",
+                  "level":"high",
+                  "value":254
+               },
+               {
+                  "name":"லீக்ஸ்",
+                  "level":"high",
+                  "value":252
+               },
+               {
+                  "name":"லெட்டூஸ்",
+                  "level":"high",
+                  "value":228
+               },
+               {
+                  "name":"சாம்பல் வாழைக்காய்",
+                  "level":"high",
+                  "value":271
+               },
+               {
+                  "name":"பூசணிக்காய் (சாதாரண)",
+                  "level":"high",
+                  "value":244
+               },
+               {
+                  "name":"கங்குன் (Water Spinach)",
+                  "level":"high",
+                  "value":271
+               },
+               {
+                  "name":"சாம்பல் பூசணி (Ash Gourd)",
+                  "level":"very_high",
+                  "value":312
+               },
+               {
+                  "name":"ஃபிரெஞ்சு பீன்ஸ்",
+                  "level":"very_high",
+                  "value":389
+               },
+               {
+                  "name":"நீண்ட சிவப்பு பீன்ஸ்",
+                  "level":"very_high",
+                  "value":304
+               },
+               {
+                  "name":"நீண்ட பாகற்காய்",
+                  "level":"very_high",
+                  "value":323
+               },
+               {
+                  "name":"மரவள்ளி இலைகள்",
+                  "level":"very_high",
+                  "value":500
+               },
+               {
+                  "name":"முருங்கை",
+                  "level":"very_high",
+                  "value":336
+               },
+               {
+                  "name":"அகத்தி (Hummingbird Tree)",
+                  "level":"very_high",
+                  "value":674
+               },
+               {
+                  "name":"வல்லாரை (Gotukola)",
+                  "level":"very_high",
+                  "value":381
+               },
+               {
+                  "name":"பலாக்காய் (பச்சை)",
+                  "level":"very_high",
+                  "value":341
+               },
+               {
+                  "name":"பலாவிதை (முதிர்ந்த)",
+                  "level":"very_high",
+                  "value":459
+               },
+               {
+                  "name":"நோல்கோல் (Knol-Khol)",
+                  "level":"very_high",
+                  "value":367
+               },
+               {
+                  "name":"மலபார் கீரை",
+                  "level":"very_high",
+                  "value":409
+               },
+               {
+                  "name":"சிப்பி காளான்",
+                  "level":"very_high",
+                  "value":317
+               },
+               {
+                  "name":"வாழைப்பூ",
+                  "level":"very_high",
+                  "value":422
+               },
+               {
+                  "name":"முகுணுவன்னா (Sessile Joyweed)",
+                  "level":"very_high",
+                  "value":450
+               },
+               {
+                  "name":"சிறகு பீன்ஸ் (Winged Bean)",
+                  "level":"very_high",
+                  "value":318
+               }
+            ]
+         },
+         {
+            "id":"fruits",
+            "icon":"🍎",
+            "name":"பழங்கள்",
+            "items":[
+               {
+                  "name":"சிவப்பு ஆப்பிள்",
+                  "level":"low",
+                  "value":94.55
+               },
+               {
+                  "name":"மாங்குஸ்டீன்",
+                  "level":"low",
+                  "value":46.93
+               },
+               {
+                  "name":"பச்சை ஆப்பிள்",
+                  "level":"medium",
+                  "value":116
+               },
+               {
+                  "name":"கருப்பு திராட்சை (விதை உள்ள)",
+                  "level":"medium",
+                  "value":171
+               },
+               {
+                  "name":"ஜாம்புல் / ரோஸ் ஆப்பிள்",
+                  "level":"medium",
+                  "value":115
+               },
+               {
+                  "name":"எலுமிச்சை சாறு",
+                  "level":"medium",
+                  "value":144
+               },
+               {
+                  "name":"நார்த்தம்பழம் (Lime)",
+                  "level":"medium",
+                  "value":200
+               },
+               {
+                  "name":"விலாட் மாம்பழம் (பழுத்த)",
+                  "level":"medium",
+                  "value":171
+               },
+               {
+                  "name":"பப்பாளி (பழுத்த)",
+                  "level":"medium",
+                  "value":181
+               },
+               {
+                  "name":"பேரிக்காய்",
+                  "level":"medium",
+                  "value":103
+               },
+               {
+                  "name":"அன்னாசி",
+                  "level":"medium",
+                  "value":133
+               },
+               {
+                  "name":"ஸ்டார் ஃப்ரூட்",
+                  "level":"medium",
+                  "value":159
+               },
+               {
+                  "name":"ஸ்ட்ராபெர்ரி",
+                  "level":"medium",
+                  "value":140
+               },
+               {
+                  "name":"தர்பூசணி",
+                  "level":"medium",
+                  "value":134
+               },
+               {
+                  "name":"கேவென்டிஷ் வாழை (பழுத்த)",
+                  "level":"high",
+                  "value":261
+               },
+               {
+                  "name":"பேரிச்சம்பழம் (பதப்படுத்தப்பட்ட)",
+                  "level":"high",
+                  "value":296
+               },
+               {
+                  "name":"விதையற்ற கருப்பு திராட்சை",
+                  "level":"high",
+                  "value":245
+               },
+               {
+                  "name":"கொய்யா (கிலோ பேரா)",
+                  "level":"high",
+                  "value":296
+               },
+               {
+                  "name":"பலாப்பழம் (பழுத்த)",
+                  "level":"high",
+                  "value":268
+               },
+               {
+                  "name":"மாண்டரின் (ஹீன் நாரம்)",
+                  "level":"high",
+                  "value":226
+               },
+               {
+                  "name":"கரத்தகொலோம்பான் மாம்பழம்",
+                  "level":"high",
+                  "value":288
+               },
+               {
+                  "name":"மாதுளை (கருஞ்சிவப்பு விதைகள்)",
+                  "level":"high",
+                  "value":204
+               },
+               {
+                  "name":"வெண்ணெய்ப்பழம் (Avocado)",
+                  "level":"very_high",
+                  "value":377
+               },
+               {
+                  "name":"அம்புல் வாழை (பழுத்த)",
+                  "level":"very_high",
+                  "value":437
+               },
+               {
+                  "name":"அனாமலு வாழை (பழுத்த)",
+                  "level":"very_high",
+                  "value":449
+               },
+               {
+                  "name":"இலங்கை ஆலிவ்",
+                  "level":"very_high",
+                  "value":351
+               },
+               {
+                  "name":"பாஷன் ஃப்ரூட் (மஞ்சள்)",
+                  "level":"very_high",
+                  "value":374
+               },
+               {
+                  "name":"விளாம்பழம் (Wood Apple)",
+                  "level":"very_high",
+                  "value":348
+               }
+            ]
+         },
+         {
+            "id":"fish",
+            "icon":"🐟",
+            "name":"மீன்",
+            "items":[
+               {
+                  "name":"ஹுருல்லா மீன்",
+                  "level":"medium",
+                  "value":155
+               },
+               {
+                  "name":"லின்னா மீன் (Scad/Mackerel)",
+                  "level":"medium",
+                  "value":160
+               },
+               {
+                  "name":"நெத்திலி மீன் (Anchovy)",
+                  "level":"high",
+                  "value":270
+               },
+               {
+                  "name":"தாலபத் மீன் (Sailfish)",
+                  "level":"high",
+                  "value":282
+               },
+               {
+                  "name":"சாலாய் மீன்",
+                  "level":"high",
+                  "value":284
+               },
+               {
+                  "name":"பலாய் (Skipjack Tuna)",
+                  "level":"high",
+                  "value":273
+               },
+               {
+                  "name":"கேலவல்லா (Yellowfin Tuna)",
+                  "level":"high",
+                  "value":272
+               },
+               {
+                  "name":"இந்திய வஞ்சிரம்",
+                  "level":"very_high",
+                  "value":309
+               },
+               {
+                  "name":"தோரா மீன் (Seer Fish)",
+                  "level":"very_high",
+                  "value":473
+               },
+               {
+                  "name":"கிரிமோரா (Silky Shark)",
+                  "level":"very_high",
+                  "value":372
+               },
+               {
+                  "name":"அலகோடுவா (Frigate Tuna)",
+                  "level":"very_high",
+                  "value":319
+               },
+               {
+                  "name":"பாலாயல் (Mackerel Tuna)",
+                  "level":"very_high",
+                  "value":357
+               }
+            ]
+         },
+         {
+            "id":"shellfish",
+            "icon":"🦐",
+            "name":"கடல் & நன்னீர் மட்டி இனங்கள்",
+            "items":[
+               {
+                  "name":"கணவாய் (Squid)",
+                  "level":"medium",
+                  "value":134
+               },
+               {
+                  "name":"இறால்",
+                  "level":"medium",
+                  "value":141
+               },
+               {
+                  "name":"நண்டு (சேற்று)",
+                  "level":"high",
+                  "value":227
+               },
+               {
+                  "name":"திலாப்பியா மீன்",
+                  "level":"high",
+                  "value":255
+               }
+            ]
+         },
+         {
+            "id":"dairy",
+            "icon":"🥛",
+            "name":"பால் & பால் பொருட்கள்",
+            "items":[
+               {
+                  "name":"வெண்ணெய் (உப்பு)",
+                  "level":"low",
+                  "value":24
+               },
+               {
+                  "name":"பனீர் / கொட்டேஜ் சீஸ்",
+                  "level":"low",
+                  "value":83
+               },
+               {
+                  "name":"எருமை தயிர்",
+                  "level":"low",
+                  "value":86.92
+               },
+               {
+                  "name":"நெய் (மாட்டு)",
+                  "level":"low",
+                  "value":1
+               },
+               {
+                  "name":"மாட்டுப்பால் (முழு கொழுப்பு)",
+                  "level":"medium",
+                  "value":131
+               },
+               {
+                  "name":"மாட்டுப்பால் (கொழுப்பற்ற)",
+                  "level":"medium",
+                  "value":131
+               },
+               {
+                  "name":"தயிர் (குறைந்த கொழுப்பு)",
+                  "level":"medium",
+                  "value":141
+               },
+               {
+                  "name":"மாட்டுப்பால் (குறைந்த கொழுப்பு)",
+                  "level":"medium",
+                  "value":168
+               },
+               {
+                  "name":"கன்டென்ஸ்டு பால்",
+                  "level":"very_high",
+                  "value":366
+               },
+               {
+                  "name":"பால் பொடி (ஸ்கிம்டு)",
+                  "level":"very_high",
+                  "value":1600
+               },
+               {
+                  "name":"பால் பொடி (முழு)",
+                  "level":"very_high",
+                  "value":1180
+               }
+            ]
+         },
+         {
+            "id":"eggs",
+            "icon":"🥚",
+            "name":"முட்டைகள்",
+            "items":[
+               {
+                  "name":"நாட்டு கோழி முட்டை (பச்சை)",
+                  "level":"medium",
+                  "value":117
+               }
+            ]
+         },
+         {
+            "id":"poultry",
+            "icon":"🍗",
+            "name":"கோழி இறைச்சி",
+            "items":[
+               {
+                  "name":"ப்ராய்லர் கோழி தொடை (தோல் இல்லாத)",
+                  "level":"high",
+                  "value":279
+               },
+               {
+                  "name":"ப்ராய்லர் கோழி மடி (தோல் இல்லாத)",
+                  "level":"high",
+                  "value":257
+               },
+               {
+                  "name":"ப்ராய்லர் கோழி மார்பு (தோல் இல்லாத)",
+                  "level":"very_high",
+                  "value":302
+               },
+               {
+                  "name":"நாட்டு கோழி கால் (தோலுடன்)",
+                  "level":"very_high",
+                  "value":365
+               }
+            ]
+         },
+         {
+            "id":"meat",
+            "icon":"🥩",
+            "name":"இறைச்சி",
+            "items":[
+               {
+                  "name":"மாட்டிறைச்சி கல்லீரல்",
+                  "level":"high",
+                  "value":286
+               },
+               {
+                  "name":"பன்றி இறைச்சி தோள்",
+                  "level":"high",
+                  "value":243
+               },
+               {
+                  "name":"மாட்டிறைச்சி துண்டுகள்",
+                  "level":"very_high",
+                  "value":367
+               },
+               {
+                  "name":"ஆட்டிறைச்சி துண்டுகள்",
+                  "level":"very_high",
+                  "value":333
+               }
+            ]
+         },
+         {
+            "id":"nuts",
+            "icon":"🥜",
+            "name":"கொட்டைகள் & விதைகள்",
+            "items":[
+               {
+                  "name":"பாதாம்",
+                  "level":"very_high",
+                  "value":679
+               },
+               {
+                  "name":"முந்திரி",
+                  "level":"very_high",
+                  "value":645
+               },
+               {
+                  "name":"வேர்க்கடலை",
+                  "level":"very_high",
+                  "value":664
+               }
+            ]
+         }
+      ]
+}
